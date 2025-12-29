@@ -1,1 +1,5 @@
 gabrielsynapse/util/registersapi/Main.class
+gabrielsynapse/util/fileutil/exception/JsonNotFoundExeption.class
+gabrielsynapse/util/fileutil/Json.class
+gabrielsynapse/util/registersapi/serializer/Cadastro.class
+gabrielsynapse/util/fileutil/FileUtil.class

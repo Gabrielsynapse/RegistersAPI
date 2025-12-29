@@ -38,4 +38,7 @@ public class Json<T>{
         String jsonStr = FileUtil.readFile(path);
         return gson.fromJson(jsonStr,type);
     }
+    public String getJsonString(T obj){
+        return gson.toJson(obj);
+    }
 }

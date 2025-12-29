@@ -1,1 +1,5 @@
+/home/linuxmint/projetos/RegistersAPI/src/main/java/gabrielsynapse/util/fileutil/FileUtil.java
+/home/linuxmint/projetos/RegistersAPI/src/main/java/gabrielsynapse/util/fileutil/exception/JsonNotFoundExeption.java
+/home/linuxmint/projetos/RegistersAPI/src/main/java/gabrielsynapse/util/fileutil/Json.java
 /home/linuxmint/projetos/RegistersAPI/src/main/java/gabrielsynapse/util/registersapi/Main.java
+/home/linuxmint/projetos/RegistersAPI/src/main/java/gabrielsynapse/util/registersapi/serializer/Cadastro.java
