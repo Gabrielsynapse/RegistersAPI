@@ -1,7 +1,5 @@
-package gabrielsynapse.bukit.discordBot.serializer;
+package gabrielsynapse.util.registersapi.serializer;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import gabrielsynapse.util.fileutil.Json;
 
 import java.util.ArrayList;
