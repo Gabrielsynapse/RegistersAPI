@@ -61,7 +61,7 @@ public class Cadastro {
     //metodos estaticos
     private static Json<Cadastro> json = new Json<>(Cadastro.class);
     //metodos getters
-    public Cadastro getCadastro(String nickname) {
+    public static Cadastro load(String nickname) {
         return json.read("registers/" + nickname + ".json");
     }
     //metodos setters
