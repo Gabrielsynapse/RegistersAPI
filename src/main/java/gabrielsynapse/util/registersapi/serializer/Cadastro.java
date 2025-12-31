@@ -1,12 +1,13 @@
 package gabrielsynapse.util.registersapi.serializer;
 
+import gabrielsynapse.util.fileutil.FileUtil;
 import gabrielsynapse.util.fileutil.Json;
 
 public class Cadastro {
     private String discordUserName;
     private String discordId;
     private String nickname;
-    public boolean present = true;
+    public boolean present = false;
     public int ausent = 0;
     public boolean susspent = false;
 
@@ -49,8 +50,8 @@ public class Cadastro {
     public void setPresent(boolean present) {
         this.present = present;
     }
-    public void addAusent(int ausent) {
-        this.ausent += ausent;
+    public void addAusent() {
+        this.ausent += 1;
     }
     public void setSusspent(boolean susspent) {
         this.susspent = susspent;
@@ -58,11 +59,20 @@ public class Cadastro {
     public void resetAusent() {
         this.ausent = 0;
     }
+    public void save(){
+        json.write("registers/" + getNickname() + ".json", this);
+    }
     //metodos estaticos
     private static Json<Cadastro> json = new Json<>(Cadastro.class);
     //metodos getters
     public static Cadastro load(String nickname) {
-        return json.read("registers/" + nickname + ".json");
+        String path = "registers/" + nickname + ".json";
+        System.out.println(path);
+        if(!FileUtil.isExistFile(path)){
+            System.out.println("O arquivo " + path + " nao existe");
+            return null;
+        }
+        return json.read(path);
     }
     //metodos setters
 }
